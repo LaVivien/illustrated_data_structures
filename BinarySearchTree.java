@@ -76,7 +76,7 @@ public class BinarySearchTree {
 		return root;
 	}
     
-    //Called by delete(), return the next successor, Time O(h), Space O(1)
+	//Called by delete(), return the next successor, Time O(h), Space O(1)
 	//h is the height of the node
 	TreeNode getSuccessor(TreeNode node) {
 		if (node == null) 
@@ -90,7 +90,7 @@ public class BinarySearchTree {
 		return node.right;
 	}
     
-    //Search a binary search tree, return the first matched node, Time O(h), Space O(1)
+	//Search a binary search tree, return the first matched node, Time O(h), Space O(1)
 	TreeNode search(int key) {                           
 		TreeNode curr = root;               
 		while (curr != null) {
@@ -152,7 +152,7 @@ public class BinarySearchTree {
 	public static void main(String[] args) {		
 		//Build a binary search tree 
 		BinarySearchTree tree = new BinarySearchTree();
-	    tree.insert(50);
+		tree.insert(50);
 	    tree.insert(12);
 	    tree.insert(25);
 	    tree.insert(75);
