@@ -30,10 +30,6 @@ public class HashTable {
 	
 	//Calculate the hashcode by the key, Time O(1), Space O(1)
 	int hashFunc(int key) {
-		if (key < Integer.MIN_VALUE || key > Integer.MAX_VALUE) {
-			System.out.println("invalid key");
-			return -1;
-		}
 		return key % maxSize;
 	}
 	
