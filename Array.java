@@ -1,16 +1,16 @@
 public class Array {
 	
-    int[] array;
-    int maxSize;
-    int length = 0;
+	int[] array;
+	int maxSize;
+	int length = 0;
     
-    //Constructor, Time O(1), Space O(1)
-    Array(int capacity) {
-    	maxSize = capacity;
-    	array = new int[maxSize];
-    }
+	//Constructor, Time O(1), Space O(1)
+	Array(int capacity) {
+		maxSize = capacity;
+		array = new int[maxSize];
+	}
     
-    //Add one element at the back, Time O(1), Space O(1)
+	//Add one element at the back, Time O(1), Space O(1)
 	void add(int value) {
 		if (length == maxSize) {  //the array is full
 			System.out.println("The array is full.");
@@ -51,7 +51,7 @@ public class Array {
 		length--;
 	}
     
-    //Print all elements in the array, Time O(n), Space O(1)
+	//Print all elements in the array, Time O(n), Space O(1)
 	void print() {
 		for (int i = 0; i < length; i++) 
 			System.out.print(array[i] + " ");
@@ -59,9 +59,9 @@ public class Array {
 	} 
 	
 	//Return the length of the array, Time O(1), Space O(1)
-    int size() {
-    	return length;
-    }
+	int size() {
+		return length;
+	}
     
 	public static void main(String[] args) {
 		//Initialize, call insert, print and size
