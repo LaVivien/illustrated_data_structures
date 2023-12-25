@@ -65,7 +65,7 @@ public class GraphAsMatrix {
         bfs(cells, sx, sy, dx, dy); //call bfs()
     }
 
-    //BFS of a graph, Time O(m*n), Space O(p), p is the number of cells that have been checked
+    //BFS of a graph, Time O(m*n), Space O(q), q is the length of the queue
     static void bfs(Cell[][] cells, int sx, int sy, int dx, int dy) {
         LinkedList<Cell> queue = new LinkedList<>();       
         Cell start = cells[sx][sy];

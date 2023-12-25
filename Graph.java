@@ -42,7 +42,7 @@ public class Graph<T> {
     }
 	
 	//Remove a node and all its edges, 
-	//Time O(n) Space O(1), n is the number of a's neighbors 
+	//Time O(V) Space O(1), V is the number of nodes in a graph 
     boolean removeNode(T a) {	
         if (!adj.containsKey(a)) //invalid input
             return false;

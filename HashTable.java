@@ -77,8 +77,8 @@ public class HashTable {
 		buckets[x] = (newList.size() == 0) ? null: new LinkedList<>(newList); 
 	}
     
-    //Print the whole hash table, Time O(m*n), Space O(1), 
-    //m is the size of the buckets, n is the max list size of the buckets 
+    //Print the whole hash table, Time O(m+n), Space O(1), 
+    //m is the size of the buckets, n is number of entries in a hashtable 
 	void print() {
 		for (int i = 0; i < maxSize; i++) {    		
 			LinkedList<Entry> list = buckets[i];
