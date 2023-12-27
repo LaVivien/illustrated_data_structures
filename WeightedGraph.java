@@ -77,8 +77,8 @@ public class WeightedGraph<T> {
 		return true;
 	}
 	
-	//Remove a node and all its edges, Time O(V) Space O(1), 
-	//V is the number of nodes in the graph
+	//Remove a node and all its edges, Time O(V+E) Space O(1),
+	//V is the number of nodes in the graph, E is the number of edges in the graph 
 	boolean removeNode(T a) {	
 		if (!graph.containsKey(a)) //invalid input
 			return false;

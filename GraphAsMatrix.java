@@ -4,6 +4,7 @@ public class GraphAsMatrix {
 
 	//Check if there is a path from start(x,y) to destination (x, y)
 	//DFS uses recursion, Time O(mxn), Space O(d), d is the depth of the recursion
+    //m is the number of rows, n is the number of columns
     static boolean dfsFindPath(int[][] matrix, int sx, int sy, int dx, int dy, int passable) {
         boolean[][] visited = new boolean[matrix.length][matrix[0].length];
         dfs(matrix, sx, sy, visited, passable);

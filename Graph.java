@@ -41,8 +41,8 @@ public class Graph<T> {
         return r1;
     }
 	
-	//Remove a node and all its edges, 
-	//Time O(V) Space O(1), V is the number of nodes in a graph 
+	//Remove a node and all its edges, Time O(V+E) Space O(1),
+	//V is the number of nodes in the graph, E is the number of edges in the graph 
     boolean removeNode(T a) {	
         if (!adj.containsKey(a)) //invalid input
             return false;

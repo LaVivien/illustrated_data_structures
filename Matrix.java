@@ -15,6 +15,7 @@ public class Matrix {
 	}
 	
 	//Search in an unsorted matrix, return the indices of the first match, Time O(m*n), Space O(1)
+	//m is the number of rows, n is the number of columns
 	static int[] searchMatrix(int[][] matrix, int key) {
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[0].length; j++) {
