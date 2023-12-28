@@ -33,9 +33,8 @@ public class Graph<T> {
         if (neighborsOfA == null || neighborsOfB == null)
             return false; //stop when no neighbors found
         boolean r1 = neighborsOfA.remove(b);
-        boolean r2;
         if (!directed) { //undirected
-            r2 = neighborsOfB.remove(a);
+            boolean r2 = neighborsOfB.remove(a);
             return r1 && r2;
         }
         return r1;
