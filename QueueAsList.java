@@ -5,7 +5,7 @@ public class QueueAsList {
 
 	//Add an element at the rear, Time O(1), Space O(1)
 	void enqueue(int value) {
-		Node newNode =  new Node(value);
+		Node newNode = new Node(value);
 		if (front == null)  //empty queue
 			front = rear = newNode;
 		else {

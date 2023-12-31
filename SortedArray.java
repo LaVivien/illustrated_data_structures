@@ -23,7 +23,7 @@ public class SortedArray {
             i--;
         }
         array[i+1] = value;
-        length ++;    	
+        length++;    	
     } 
         
     //Delete the first matched element by a key, Time O(n), Space O(1)

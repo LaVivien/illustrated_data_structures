@@ -11,7 +11,7 @@ public class Matrix {
 	static char get(char[][] matrix, int r, int c) {
 		if (r < 0 || r >= matrix.length || c < 0 || c >= matrix[0].length)
 			return  Character.MAX_VALUE;  //invalid input
-		return matrix[r][c] ;
+		return matrix[r][c];
 	}
 	
 	//Search in an unsorted matrix, return the indices of the first match, Time O(m*n), Space O(1)
