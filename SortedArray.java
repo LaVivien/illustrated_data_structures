@@ -29,7 +29,7 @@ public class SortedArray {
     //Delete the first matched element by a key, Time O(n), Space O(1)
     boolean delete(int key) {
         int i = binarySearch(key);
-        if (i == length || i < 0) //not found
+        if (i < 0) //not found
             return false;
         else {
             for (int j = i; j < length-1; j++) 
