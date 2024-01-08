@@ -20,7 +20,8 @@ public class PriorityQueueAsHeap {
 			return;
 		}
 		heap[length] = value;
-		bubbleUp(length++); //start from the last position
+		bubbleUp(length); //start from the last position
+		length++;
 	}
 
 	//Called by enqueue(), move the new item up in the heap, Time O(logn), Space O(1)
