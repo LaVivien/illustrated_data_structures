@@ -3,7 +3,7 @@ import java.util.*;
 public class GraphAsMatrix {
 
 	//Check if there is a path from start(x,y) to destination (x, y)
-	//DFS uses recursion, Time O(mxn), Space O(d), d is the depth of the recursion
+	//DFS uses recursion, Time O(mxn), Space O(mxn)
     //m is the number of rows, n is the number of columns
     static boolean dfsFindPath(int[][] matrix, int sx, int sy, int dx, int dy, int passable) {
         boolean[][] visited = new boolean[matrix.length][matrix[0].length];
@@ -15,7 +15,7 @@ public class GraphAsMatrix {
         return true;
     }
 
-    //DFS helper, Time O(m*n), Space O(d) 
+    //DFS helper, Time O(m*n), Space O(d), d is the depth of the recursion
     static void dfs(int[][] matrix,int x, int y, boolean[][] visited, int passable) {
         if (x < 0 || x >= matrix.length || y < 0 || y >= matrix[0].length || matrix[x][y] != passable || visited[x][y]) 
             return;		//terminating condition

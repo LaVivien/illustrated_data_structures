@@ -57,7 +57,7 @@ public class PriorityQueueAsHeap {
 		while (index < length/2) {
 			int left = 2*index + 1;
 			int right = 2*index + 2;
-			if (right < length && heap[left]< heap[right])
+			if (right < length && heap[left] < heap[right])
 				larger = right;
 			else
 				larger = left;
