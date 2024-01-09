@@ -28,7 +28,7 @@ public class PriorityQueueAsHeap {
 	void bubbleUp(int index) {
 		int parentIndex = (index-1)/2;
 		int item = heap[index];
-		while (index > 0 && item> heap[parentIndex]) {
+		while (index > 0 && item > heap[parentIndex]) {
 			heap[index] = heap[parentIndex]; 
 			index = parentIndex; 
 			parentIndex = (parentIndex-1)/2;
